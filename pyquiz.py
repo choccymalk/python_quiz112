@@ -6,7 +6,6 @@ def checkguess(guess, answer):
     still_guessing = True
     attempt = 0
     while still_guessing and attempt < 3:
-        #I used the lower() command :)
         if guess.lower() == answer.lower():
             print("correct")
             score = score + 1
@@ -17,7 +16,6 @@ def checkguess(guess, answer):
             attempt = attempt + 1
         if attempt == 3:
             print("The right answer is", answer)
-        #I also used the upper() command :P
         if guess.lower() == answer.lower():
             print(" ")
 score = 0
